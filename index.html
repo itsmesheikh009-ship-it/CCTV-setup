@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone CCTV Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">📹 iCCTV</div>
+
+        <div class="status">
+            <span class="dot"></span>
+            SYSTEM ONLINE
+        </div>
+    </header>
+
+    <main>
+
+        <div class="top-bar">
+            <div>
+                <h1>Security Dashboard</h1>
+                <p>iPhone 8 Camera Monitor</p>
+            </div>
+
+            <div id="clock">00:00:00</div>
+        </div>
+
+        <section class="camera-grid">
+
+            <div class="camera-card">
+
+                <div class="camera-header">
+                    <span>CAMERA 01</span>
+                    <span class="live">● LIVE</span>
+                </div>
+
+                <!-- Camera Feed -->
+                <div class="camera-screen">
+
+                    <video id="cameraFeed" autoplay playsinline></video>
+
+                    <div id="cameraMessage">
+                        Camera not connected
+                    </div>
+
+                    <div class="timestamp" id="timestamp">
+                        00/00/0000 00:00:00
+                    </div>
+
+                </div>
+
+                <div class="controls">
+
+                    <button id="startBtn">
+                        ▶ Start Camera
+                    </button>
+
+                    <button id="stopBtn">
+                        ■ Stop
+                    </button>
+
+                    <button id="fullscreenBtn">
+                        ⛶ Fullscreen
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-panel">
+
+                <h2>Camera Information</h2>
+
+                <div class="info">
+                    <span>Device</span>
+                    <strong>iPhone 8</strong>
+                </div>
+
+                <div class="info">
+                    <span>Status</span>
+                    <strong id="statusText">Disconnected</strong>
+                </div>
+
+                <div class="info">
+                    <span>Connection</span>
+                    <strong>Wi-Fi</strong>
+                </div>
+
+                <div class="info">
+                    <span>Mode</span>
+                    <strong>Live Monitoring</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <h1>Mn pagal hun</h1>
+        <p>Bhai saab</p>
+
+    </main>
+
+    <footer>
+        Personal CCTV Dashboard • 2026
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
